@@ -1,0 +1,72 @@
+id: pv
+module: m1
+order: 1
+minutes: 40
+title: "Present Value: What a Future Rupee Is Worth Today"
+big_idea: "**Present value** shrinks a future cash flow by the return you could have earned meanwhile."
+why:
+  - "Cash arrives at different times, and ==you can't add rupees from different years== directly."
+  - "Every valuation question in the course is a PV question in disguise."
+story: |
+  A friend offers you ₹110 next year or ₹100 today. If your bank pays 10%,
+  the ₹100 grows to exactly ₹110. The two offers are the same; PV is the
+  tool that tells you so.
+concepts:
+  - "Discounting divides by \\((1+r)^t\\): the longer the wait and the higher the rate, the smaller today's value."
+  - "The rate is the **opportunity cost of capital**, the return on the best alternative of equal risk."
+  - "Worked in the example below: ₹1,000 in 3 years at 8% is worth ₹793.83 today."
+formulas:
+  - name: "present value"
+    tex: "\\PV = \\frac{C_t}{(1+r)^t}"
+    read: "today's value is the future cash divided by one plus the rate, to the power of the years"
+    use: "any single future cash flow"
+diagrams:
+  - type: plot
+    title: "PV of ₹100 vs years, two rates"
+    x_label: "years"
+    y_label: "PV (₹)"
+    x_min: 0
+    x_max: 20
+    y_min: 0
+    y_max: 100
+    series:
+      - {label: "r = 5%", fn: "100/(1.05)**x"}
+      - {label: "r = 12%", fn: "100/(1.12)**x"}
+      - {label: "observed", dots: true, points: [[2, 80], [5, 70], [10, 45]]}
+      - {label: "r = 8%", dashed: true, fn: "100/(1.08)**x"}
+  - type: formula
+    title: "the parts"
+    tex: "\\PV = \\frac{C_t}{(1+r)^t}"
+    parts: [{sym: "C_t", meaning: "cash at time t"}, {sym: "r", meaning: "rate per period"}]
+  - type: timeline
+    title: "cash on a timeline"
+    events: [{when: "t = 0", label: "value today"}, {when: "t = 3", label: "₹1,000 arrives"}]
+  - type: cycle
+    title: "a cycle"
+    steps: ["save", "earn interest", "reinvest", "grow"]
+definitions:
+  - {term: "Discount rate", meaning: "The return you give up by waiting."}
+  - {term: "Present value", meaning: "Today's equivalent of a future amount."}
+examples:
+  - title: "Three years at 8%"
+    source: "Claude-made"
+    question: "What is ₹1,000 received in 3 years worth today at 8%?"
+    steps:
+      - "Identify: \\(C = 1000\\), \\(r = 0.08\\), \\(t = 3\\)."
+      - "Discount factor \\(1.08^3 = 1.259712\\)."
+      - "PV = 1000 / 1.259712 = ₹793.83."
+    answer: "**₹793.83**, valid when 8% is the return on an equally risky alternative."
+    verify: [{expr: "1000/1.08**3", equals: 793.832241, tol: 0.001}]
+key_points:
+  - "PV = C / (1 + r)^t."
+  - "Higher rate or longer wait → lower PV."
+mistakes:
+  - "Using the wrong period rate (annual rate with monthly periods)."
+  - "Adding cash flows from different dates without discounting."
+try_it: "Price ₹500 due in 2 years at 10% before reading on."
+questions:
+  - {q: "What happens to PV if r doubles?", a: "It falls, and by more for distant cash flows."}
+revise:
+  points: ["PV = C/(1+r)^t", "rate = opportunity cost"]
+  formulas: [0]
+sources: ["demo deck p1–3"]

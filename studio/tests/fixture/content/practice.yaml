@@ -1,0 +1,45 @@
+title: Practice
+intro: "Sets by exam."
+sets:
+  - id: q1
+    group: Mid-term
+    title: "Quick MCQs"
+    kind: mcq
+    items:
+      - q: "PV falls when…"
+        options:
+          - {t: "the rate rises", ok: true, why: "Right: bigger denominator."}
+          - {t: "the cash flow rises", why: "Trap: PV rises."}
+  - id: pr
+    group: Mid-term
+    title: "Problems"
+    kind: problems
+    items:
+      - {level: 2, source: "Claude-made", q: "PV of ₹500 in 2 years at 10%?", hint: "divide by 1.21", solution: "₹413.22"}
+      - level: 1
+        source: "Claude-made"
+        q: |
+          Read the table.
+
+          | year | cash |
+          |---|---|
+          | 1 | 100 |
+          | 2 | 110 |
+        solution: "PV = 100/1.1 + 110/1.21 = ₹181.82"
+  - id: dr
+    group: Mid-term
+    title: "PV drill"
+    kind: drill
+    drill: pv
+  - id: cs
+    group: End-term
+    title: "A short case"
+    kind: case
+    case: "Two sites blame each other for delays."
+    questions: [{q: "Diagnose the conflict.", marks: 5, model: "Process conflict driven by information asymmetry."}]
+  - id: pp
+    group: End-term
+    title: "Past paper 2020"
+    kind: paper
+    source: "PAPER-2020"
+    questions: [{q: "Q1", label: "1.1", marks: 5, model: "model points"}]

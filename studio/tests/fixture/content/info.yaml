@@ -1,0 +1,11 @@
+title: About these notes
+intro: "Everything that isn't the subject itself lives here."
+sections:
+  - title: Exam
+    table: {head: [component, weight], rows: [[mid-term, "40%"], [end-term, "60%"]]}
+  - title: Coverage
+    table: {head: [source, taught in, status], rows: [["demo deck", "PV", "✓ covered"], ["textbook ch 6", "—", "✗ not in repo"], ["class 3", "conflict", "partial: slides only"]]}
+  - title: Still to upload
+    list: ["Textbook ch 6: will add conflict research (affects Conflict)."]
+  - title: Errata
+    body: "None found in the demo sources."

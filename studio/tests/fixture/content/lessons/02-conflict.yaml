@@ -1,0 +1,41 @@
+id: conflict
+module: m2
+order: 1
+minutes: 30
+title: "Conflict: When Disagreement Helps"
+big_idea: "A **moderate** level of task conflict keeps a team sharp; ==too little or too much== hurts."
+why: ["Teams either avoid all disagreement or let it turn personal.", "Cases ask you to diagnose the type and the cause."]
+concepts:
+  - "Task, relationship, process and status conflict differ in what the disagreement is about."
+  - "Structure (interdependence, information asymmetry) causes; culture amplifies."
+diagrams:
+  - type: compare
+    title: "functional vs dysfunctional"
+    left_label: functional
+    left_points: ["supports group goals", "task-focused"]
+    right_label: dysfunctional
+    right_points: ["hinders performance", "personal"]
+  - type: flow
+    title: "the conflict process"
+    nodes: [{id: a, label: "potential opposition"}, {id: b, label: "cognition"}, {id: c, label: "intentions"}, {id: d, label: "behaviour"}, {id: e, label: "outcomes", hl: true}]
+    edges: [{from: a, to: b}, {from: b, to: c}, {from: c, to: d}, {from: d, to: e}]
+  - type: table
+    title: "types"
+    head: [type, about]
+    rows: [[task, "content and goals"], [process, "how work gets done"]]
+  - type: matrix
+    title: "handling styles"
+    x_label: cooperativeness
+    y_label: assertiveness
+    cells: [[{title: competing, note: "win"}, {title: collaborating, note: "both win"}], [{title: avoiding, note: "withdraw"}, {title: accommodating, note: "yield"}]]
+  - type: stack
+    title: "values under behaviour"
+    layers: [{label: behaviours}, {label: attitudes}, {label: beliefs}, {label: values}]
+  - type: pipeline
+    title: "resolution"
+    steps: [{label: diagnose}, {label: "fix structure"}, {label: "repair relationships"}]
+key_points: ["Moderate task conflict is functional.", "Fix structure before people."]
+mistakes: ["Stopping at 'cultural differences'."]
+questions: [{q: "Who gets the visible project: which type?", a: "Status conflict."}]
+revise:
+  diagram: 0

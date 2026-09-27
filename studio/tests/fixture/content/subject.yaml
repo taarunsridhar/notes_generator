@@ -1,0 +1,15 @@
+code: fixture
+brand: DEMO
+title: "Demo Subject: Engine Test"
+profile: quant
+eyebrow: "Term II · engine fixture"
+blurb: "A tiny subject that uses **every** lesson section, diagram type and practice kind, so the engine is tested before a real subject is built."
+hero_diagram:
+  type: pipeline
+  kicker: the loop
+  title: learn → practise → revise
+  steps: [{label: Learn, note: "lessons"}, {label: Practise, note: "sets"}, {label: Revise, note: "one pass"}]
+  caption: "Every subject file follows this loop."
+modules:
+  - {id: m1, title: "Money and Time", group: "Mid-term", blurb: "Discounting and why a rupee today beats a rupee tomorrow."}
+  - {id: m2, title: "People at Work", group: "End-term", blurb: "A theory-style lesson to test frameworks and cases."}

@@ -1,0 +1,7 @@
+intro: "The demo subject in one pass."
+a4:
+  title: "A4 sheet draft"
+  note: "Copy by hand."
+  sides:
+    - label: "SIDE 1"
+      blocks: [{h: "PV", lines: ["\\(PV = C/(1+r)^t\\)", "rate = opportunity cost"]}]

@@ -1,0 +1,36 @@
+id: c01
+module: m2
+order: 2
+kind: case
+session: "S05 (Mon 29 Sep)"
+minutes: 25
+title: "Case: The Two Plant Managers"
+big_idea: "Whether the plant conflict is **task** or **relationship** conflict decides the fix."
+why:
+  - "Class opens with: \"Whose side are you on?\" The professor wants the conflict *type* named before any side is taken."
+  - "Tests the functional vs dysfunctional distinction from [Conflict](#/l/conflict)."
+story: |
+  Two plant managers share one maintenance crew. Output at Plant A fell 12% after the crew was moved to Plant B's schedule.
+concepts:
+  - "**Plant A**: output −12% in the quarter after the schedule change (Exhibit 2)."
+  - "**Plant B**: downtime halved; its manager was promoted in March."
+  - "The crew roster is set by head office, not by either manager: a **structural** cause."
+  - "Both managers cite the same KPI (uptime) to argue opposite schedules."
+examples:
+  - title: "Q1: Diagnose the conflict"
+    source: "case question 1"
+    question: "What kind of conflict is this, and what caused it?"
+    steps:
+      - "Name the level: between two units, not two personalities."
+      - "Mechanism: a shared scarce resource plus a KPI that rewards each manager for taking it."
+      - "Evidence: the roster is head office's; the uptime KPI is common to both (Exhibit 2)."
+    answer: "Task conflict with a structural cause: fix the resource rule and the KPI, not the managers."
+key_points:
+  - "Open with the type and the structural cause, then the evidence."
+  - "Recommend a structural fix: a shared roster rule or a joint KPI."
+mistakes:
+  - "Blaming personalities when the roster is set by head office."
+questions:
+  - q: "\"Isn't the Plant B manager just political?\""
+    a: "The promotion is consistent with that, but the conflict survives a change of manager: the KPI and roster create it."
+sources: ["case pack C01"]
